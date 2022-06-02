@@ -39,6 +39,12 @@ According to the boxplot it shows that the back row seems to consume more alcoho
 
 ## Numerical Summarys 
 
+```{r}
+favstats(alcohol~Seat,data=davisdata)
+```
+
+The people sitting in the back have an overall higher score of alcohol consumption. They are about three times more than the middle rows and way more than the front row. The front row has a very small percentage of alcohol compared to the back. 
+
 ## Inferential Tests
 
 ## Conclusions
