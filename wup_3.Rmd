@@ -47,6 +47,19 @@ The people sitting in the back have an overall higher score of alcohol consumpti
 
 ## Inferential Tests
 
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+
+The results from this graph shows a very small number so we will change up the graph to see if any information will change, or give us a better understanding of the data. 
+
+```{r}
+plot(TukeyHSD(model1))
+```
+
+Looking at the graph we see that the middle-back and the middle-front intervals are less than zero we should see significant results. 
+
 ## Conclusions
 
 
